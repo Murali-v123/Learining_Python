@@ -9,6 +9,7 @@ def greet_user(name):
     print(f"Heloo {name} brooo")
 
 greet_user("Murali")
+greet_user("Mohan")
 
 #Write a function add_numbers(a, b) that returns the sum of two numbers. Call this function with different values.
 def add(n1,n2):
