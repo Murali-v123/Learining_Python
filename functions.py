@@ -1,5 +1,4 @@
-#Write a function greet() that takes no 
-# arguments and prints a greeting message.
+#Write a function greet() that takes no arguments and prints a greeting message.
 def greet():
     print("Hello Brooooo")
 
