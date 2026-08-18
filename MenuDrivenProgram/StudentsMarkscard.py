@@ -46,9 +46,25 @@ class Report_Card:
         student.is_passed()
         student.calculate_Grade()
 
-a=Student("kl",2)
-a.addmarks("MAths",90)
-a.addmarks("English",80)
+class classroom:
+    def __init__(self,grade,section):
+        self.grade=grade
+        self.section=section
+        self.__students=[]
+
+    def addstudent(self,name):
+        self.__students.append(name)
+
+    def get_student_list(self):
+        for i,student in enumerate (self.__students):
+            print(f"{i+1}:{student}")
+
+c=classroom("10th","a")
+c.addstudent("a")
+c.get_student_list()
+# a=Student("kl",2)
+# a.addmarks("MAths",90)
+# a.addmarks("English",80)
 
 
-Report_Card.generate(a)
+# Report_Card.generate(a)
