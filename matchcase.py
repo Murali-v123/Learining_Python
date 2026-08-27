@@ -27,6 +27,4 @@ match command:
         print("🛑 Shutting down immediately.")
     case _:
         print("❓ Unknown command entered.")
-
-
     
