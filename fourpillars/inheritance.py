@@ -9,7 +9,7 @@ class Bike(Vehicle):
         self.name=name
     def ride(self):
         # super().start() calling parent class method using super keyword
-        print("The bike is ready to ride")
+        print(f"The bike is ready to ride and its name is {self.name}")
 
 b=Bike("pulsar")
 b.start()
