@@ -18,11 +18,10 @@ def greet(func):
         print("Have a nice day!")
     return wrapper
 
-@greet
 def say_name(name):
     print(f"My name is {name}")
 
-say_name("Murali")
+greet(say_name)("Murali")
 
 def logger(func):
     def wrapper():
