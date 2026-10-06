@@ -85,7 +85,9 @@ def update_prod(id: int, prod: product , db: session = Depends(get_db) ):
         db_product.price = prod.price
         db_product.quantity = prod.quantity
         db.commit()
+
         return "Product Updated"
+    
     else:
         return "No product found" 
 
