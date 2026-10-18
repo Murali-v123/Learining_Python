@@ -62,3 +62,79 @@ arr2d
 arr2d.shape
 arr2d.reshape(3,2)
 arr2d.flatten()
+
+# 1d array inexing
+arr = np.array([1,2,3,4,5])
+print(arr[3])
+print(arr[0])
+print(arr[4])
+idx=[1,0,4]
+# fancy indexing
+print(arr[idx])   
+print(arr[arr%2!=0])
+print(arr[arr%2==0])
+
+# slicinng
+print(arr[1:arr.size:2])
+
+
+
+# 2d array indexing
+arr2d=np.array([[1,2,3],[4,5,6]])
+print(arr2d[1][2])
+print(arr2d[0][1])
+
+# list creates a copy and changes value in copy array
+arr=[1,2,3,4,5]
+sub=arr[1:3]
+sub[0]=200
+arr
+sub
+
+# numpy does not creates a copy and changes value in original array
+arr=np.array([1,2,3,4,4,5])
+sub=arr[1:3]
+sub[0]=200
+arr
+sub
+
+arr=np.array([1,3,5,2,8,6,"hello"])
+print(arr.dtype)
+carr = np.array([ 2 + 3j ])
+carr1 = np.array([ 3 + 9j ])
+print(carr+carr1,carr.dtype)
+
+darr=np.array(["hello",{1,2,3,},5,6])
+print(darr.dtype)
+
+# agg fun
+arr=np.array([1,2,3,4,5])
+print(np.sum(arr))
+print(np.prod(arr))
+print(np.min(arr))
+print(np.max(arr))
+print(np.argmin(arr))
+print(np.argmax(arr))
+print(np.mean(arr))
+print(np.median(arr))
+print(np.var(arr))
+print(np.std(arr))
+
+#power fun
+print(np.sqrt(arr))
+print(np.square(arr))
+print(np.pow(arr,4))
+
+# log fun
+
+print(np.log(arr))
+print(np.log10(arr))
+print(np.log2(arr))
+print(np.exp(arr))
+
+print(np.round(3.14))
+print(np.ceil(3.14))
+print(np.floor(3.14))
+print(np.unique(arr))
+print(np.sort(arr))
+print(np.abs(arr))
