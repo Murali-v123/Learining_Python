@@ -9,7 +9,7 @@ info={
 }
 s=pd.Series([1,2,3,4,5],index=['a','b','c','d','e'])
 df=pd.DataFrame(info)
-df=pd.DataFrame([["murali v",8],["pradeep",8.5],["gani",8],["rohith",9]],columns=["name","cgpa"])
+df=pd.DataFrame([["murali v",8],["pradeep",8.5],["gani"],["rohith",9]],columns=["name","cgpa"])
 df
 type(df)
 s
@@ -48,3 +48,9 @@ df["name"].str.upper()
 df["name"].str.strip()
 df["name"].str.split(" ")
 df["name"].str.contains("a",case=False)
+
+df2=df.copy()
+df2.columns
+df2.isna()
+df.fillna(0)
+df2.to_csv("Example_Saved_csv_file.csv")
